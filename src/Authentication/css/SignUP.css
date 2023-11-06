@@ -1,0 +1,22 @@
+.sign-up-conatiner{
+    height:685px !important;
+}
+
+.name-field {
+    position: relative;
+    top: -16px;
+}
+
+.name-label {
+    margin-right: 305px;
+}
+
+.sign-up-btn {
+    width: 265px;
+    height: 46px;
+    color: white;
+    background-color: #B1DC5E;
+    border: 1px solid #B1DC5E;
+    border-radius: 5px;
+    margin-top: 26px;
+}

@@ -1,0 +1,112 @@
+
+/* Parent Modal Container */
+.task-creation-poppup .modal-dialog .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 256%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: var(--bs-modal-bg);
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
+    right: 381px;
+}
+
+.modal-btn {
+    background-color: #4346AF;
+    border: 1px solid #4346AF;
+}
+
+.modal-btn:hover {
+    background-color: #4346AF;
+    border: 1px solid #4346AF;
+}
+
+.modal-btn:active {
+    background-color: #4346AF !important;
+    border: 1px solid #4346AF;
+}
+
+.task-creation-madal-title {
+    margin-bottom: 0;
+    line-height: var(--bs-modal-title-line-height);
+    font-weight: 300 !important;
+    font-size: 20px;
+}
+
+.task-creation-modal {
+    width: 100%;
+    height: 331px;
+    background-color: #fffefe;
+    display: flex;
+}
+
+.task-creation-modal-left {
+    width: 46.5%;
+    height: 97%;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #F9F9F9;
+    border: 1px solid rgb(209, 209, 209);
+}
+
+.task-creation-modal-left-header {
+    height: 50px;
+}
+
+.task-creation-modal-left-header p {
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    position: relative;
+    top: 12px;
+    left: 12px;
+    font-size: 17px;
+}
+
+.task-creation-modal-left-body {
+    height: 70%;
+    overflow-y: scroll;
+    padding: 0px 12px
+}
+
+.select-scv-btn p {
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.select-scv-btn {
+    position: relative;
+    top: 10px;
+    left: 400px;
+    background: #00B154;
+    border: none;
+}
+
+.select-csv-file {
+    visibility: hidden;
+}
+
+.task-creation-modal-right {
+    background-color: white;
+}
+
+p.print-total-record {
+    margin-left: 21px;
+    font-size: 19px;
+    margin-top: -4px;
+}
+
+.left-box-bold-text {
+    color: #373738;
+}
+
+.file-btn-style {
+    font-size: 13.5px;
+    margin-top: 7px;
+    margin-left: 147px;
+    background: #00B154;
+    border: none;
+}

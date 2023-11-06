@@ -1,0 +1,8 @@
+<svg version="1.1" class="logo logo-st-icon ng-scope" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 102.1 102.1" style="enable-background:new 0 0 102.1 102.1;" xml:space="preserve">
+    <g>
+        <path class="logo-st-icon__top-left" d="M11.1,74C5.1,74,0.3,69.2,0.3,63.3V30.9C0.3,13.9,14.2,0,31.2,0h32.4c5.9,0,10.8,4.8,10.8,10.8
+            c0,5.9-4.8,10.8-10.8,10.8H31.2c-5.2,0-9.4,4.2-9.4,9.4v32.4C21.8,69.2,17,74,11.1,74" style="fill: #FFC23B;"></path>
+        <path class="logo-st-icon__bottom-right" d="M91.2,27.7c5.9,0,10.8,4.8,10.8,10.8v32.4c0,17-13.9,30.9-30.9,30.9H38.7c-5.9,0-10.8-4.8-10.8-10.8
+            c0-5.9,4.8-10.8,10.8-10.8h32.4c5.2,0,9.4-4.2,9.4-9.4V38.4C80.5,32.5,85.3,27.7,91.2,27.7" style="fill: #FFFFFF;"></path>
+    </g>
+</svg>
