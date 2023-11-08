@@ -1,0 +1,83 @@
+.AppLayout .navbar-container {
+    width: 320px;
+    height: 100%;
+    background-color: #4346AF;
+    z-index: 10;
+}
+
+.navitem.active {
+    background-color: #2A2D8B;
+    border: 1px solid #383CC5;
+}
+
+.navitem:hover {
+    background-color: #2A2D8B;
+}
+
+.navitem {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.navitem a {
+    width: 100px;
+    text-align: left;
+    line-height: 22.8571px;
+    font-size: 16px;
+    color: #D8D8D8;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.app-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px !important;
+}
+
+.app-logo-img {
+    margin-left: 25px;
+    height: 20px;
+    border-radius: 8px;
+    margin-right: 109px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.nav-item-icon {
+    margin-left: 25px;
+    height: 20px;
+    border-radius: 8px;
+    margin-right: 35px;
+    margin-top: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.three-line-icon {
+    position: relative;
+    top: 12px;
+    right: 45px;
+}
+
+img.three-line-icon1 {
+    position: relative;
+    right: 35px;
+}
+
+img.logo-img {
+    margin-right: 109px;
+    color: orange;
+}
+
+.toggle-icon {
+    color: white;
+    position: relative;
+    right: 49px;
+    top: 2px;
+    cursor: pointer;
+}

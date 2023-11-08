@@ -1,0 +1,9 @@
+.account{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    background-color: #f0f0f0;
+}

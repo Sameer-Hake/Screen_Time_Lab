@@ -1,0 +1,16 @@
+:root {
+    --colorTheme: #1e90ff;
+}
+
+.App {
+    text-align: center;
+    
+}
+
+/********************   off the the increment and  decrement button inside the input field  ********************/
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

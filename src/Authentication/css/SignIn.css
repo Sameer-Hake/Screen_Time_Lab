@@ -1,0 +1,190 @@
+.sign-body-container {
+    width: 100%;
+    height: 100%;
+    background-color: #F0F0F0;
+}
+
+.signin-container {
+    width: 400px;
+    height: 630px;
+    background-color: white;
+    margin: 30px auto;
+    box-shadow: 0px 1px 9px 3px rgba(185, 180, 180, 0.61);
+    -webkit-box-shadow: 0px 1px 9px 3px rgba(185, 180, 180, 0.61);
+    -moz-box-shadow: 0px 1px 9px 3px rgba(185, 180, 180, 0.61);
+}
+
+.signin-items {
+    text-align: center;
+}
+
+.signin-item {
+    margin-top: 17px;
+}
+
+.sign-in-logo {
+    width: 150px;
+}
+
+.logo-card {
+    width: 100%;
+    height: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 17px;
+}
+
+.login-text {
+    color: #4343b1;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 1.375;
+    text-align: center;
+}
+
+.log-with-facebook {
+    color: #425B99;
+    font-size: 14px;
+}
+
+.log-with-google {
+    color: #DA6D61;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.logo-item {
+    padding-right: 7px;
+}
+
+/****************************   SignIn OR Section   *****************************/
+
+.signin-items-or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-divider {
+    width: 141px;
+    height: 2px;
+    background-color: #f0f0f0;
+
+}
+
+.sign-or {
+    padding: 21px;
+    color: #afabab;
+}
+
+/****************************   SignIn Field Section   *****************************/
+
+.sign-in-email {
+    border: none;
+    border-bottom: 1px solid #c9c7c7!important;
+    width: 339px;
+    padding: 0;
+    margin: 0;
+    height: 41px;
+}
+
+.sign-in-email::placeholder {
+    font-size: 13.5px;
+    padding: 5px;
+}
+
+.sign-in-email:focus {
+    outline: none;
+    border-bottom: 1px solid blue !important;
+}
+
+.login-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field-label {
+    font-size: 12px;
+    color: #4346AF;
+    font-weight: 700;
+    margin-right: 259px;
+}
+
+.password-label {
+    margin-right: 280px;
+    margin-top: 16px;
+}
+
+ .keep-logged {
+    font-size: 13px;
+    color: #393636;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.forgot-password-text {
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+.remaimber-pass {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
+.checkbox-field {
+    display: flex;
+    justify-content: center;
+}
+
+/****************************   Login button Section   *****************************/
+
+.login-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 125px;
+}
+
+.login-btn {
+    width: 265px;
+    height: 46px;
+    color: white;
+    background-color: #4343B1;
+    border: 1px solid #4343B1;
+    border-radius: 5px;
+    margin-top: 26px;
+    font-weight: 700;
+    letter-spacing: 1px
+}
+
+.have-account {
+    font-weight: 600;
+    color: #B7B7B7;
+}
+
+.after-login-text {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.link-text {
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.password-toggle{
+    cursor: pointer;
+    position: relative;
+    bottom: 29px;
+    left: 147px
+}

@@ -1,0 +1,28 @@
+.delete-task{
+    text-align: center;
+    color: #2113a6;
+    padding: 7px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 32px;
+    margin-left: 20px;
+    width: 245px;
+    height: 46px;
+    cursor: pointer;
+    margin-bottom: 35px;
+    border: 2px solid #2113a6;
+    font-weight: 600;
+}
+
+.delete-task:hover {
+    background-color: #2113a6;
+    color: #fff;
+    text-decoration: none;
+}
+
+.task-user {
+    margin-left: 23px;
+    margin-bottom: 4px;
+}
