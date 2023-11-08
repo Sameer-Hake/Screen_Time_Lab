@@ -314,7 +314,7 @@ const EditTask = () => {
                     >
                         <span>Save Task</span>
                     </div>
-                    ) : (<div className="inactivecreateTask">
+                    ) : (<div className="inactivecreate-task">
                         <span>Save Task</span>
                     </div>
                     )

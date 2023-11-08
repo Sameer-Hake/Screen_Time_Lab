@@ -3,14 +3,15 @@ import React, { useEffect, useRef, useState } from 'react';
 import logo from '../../utils/signin-logo.svg';
 import google from '../../utils/google.svg';
 import facebook from '../../utils/facebook.svg';
-import { Link, json } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
-import  useValideUser  from '../../utils/useValideUser';
+import useValideUser from '../../utils/useValideUser';
 
 const SignUP = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
 
     const emailLabel = useRef(null);
     const passwordLabel = useRef(null);
@@ -49,11 +50,30 @@ const SignUP = () => {
             nameLabel.current.style.visibility = 'hidden';
         }
     }
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    }
+
+    const user = useValideUser({ name, email, password });
     const handleSignUp = (e) => {
-         const user = useValideUser({ name, email, password });
-        allUser.push(user);
-        localStorage.setItem("user_data", JSON.stringify(allUser));
-        alert("user Created successfully");
+        allUser = JSON.parse(localStorage.getItem("user_data"));
+        let flag = true;
+        if (user === null) {
+            alert("User is invalide");
+        }
+        else {
+            for (let i = 0; i < allUser.length; i++) {
+                if (allUser[i].email === email) {
+                    alert("user allready exist");
+                    flag = false;
+                }
+            }
+            if (flag || allUser.length === 0) {
+                allUser.push(user);
+                localStorage.setItem("user_data", JSON.stringify(allUser));
+                alert("user Created successfully");
+            }
+        }
     }
 
     return (
@@ -116,7 +136,7 @@ const SignUP = () => {
                     <label htmlFor="sign-password" className='field-label password-label'
                         ref={passwordLabel}>Password</label>
                     <input
-                        type="password"
+                        type={showPassword ? "text" : "password"}
                         id="sign-password"
                         name="sign-password"
                         value={password}
@@ -124,6 +144,15 @@ const SignUP = () => {
                         className="sign-in-email"
                         onChange={handlePassword}
                     />
+                    <div className="password-toggle" onClick={togglePasswordVisibility}>
+                        {
+                            showPassword ? (
+                                <i className="fas fa-eye-slash"></i>
+                            ) : (
+                                <i className="fas fa-eye"></i>
+                            )
+                        }
+                    </div>
                 </div>
 
                 <div className="remaimber-pass">

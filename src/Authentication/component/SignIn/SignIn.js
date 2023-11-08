@@ -1,5 +1,5 @@
 import '../../css/SignIn.css';
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import logo from '../../utils/signin-logo.svg';
 import google from '../../utils/google.svg';
 import facebook from '../../utils/facebook.svg';
@@ -11,6 +11,7 @@ const SignIn = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
 
     const emailLabel = useRef(null);
     const passwordLabel = useRef(null);
@@ -22,10 +23,9 @@ const SignIn = () => {
         emailLabel.current.style.visibility = 'hidden';
         passwordLabel.current.style.visibility = 'hidden';
     }, []);
+
     useEffect(() => {
         allUserData = JSON.parse(localStorage.getItem("user_data"));
-        console.log("allUserData");
-        console.log(allUserData);
     });
 
     const handleEmail = (e) => {
@@ -45,10 +45,15 @@ const SignIn = () => {
             passwordLabel.current.style.visibility = 'hidden';
         }
     }
+
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    }
+
     const handleLogin = () => {
-        for (let i=0;i<allUserData.length;i++) {
-            if (email == allUserData[i].email && password == allUserData[i].password) {
-                navigate("/app", { replace: true });
+        for (let i = 0; i < allUserData.length; i++) {
+            if (email === allUserData[i].email && password === allUserData[i].password) {
+                navigate("/app", { replace: true } );
             }
         }
     }
@@ -99,7 +104,7 @@ const SignIn = () => {
                     <label htmlFor="sign-password" className='field-label password-label'
                         ref={passwordLabel}>Password</label>
                     <input
-                        type="password"
+                        type={showPassword ? "text" : "password"}
                         id="sign-password"
                         name="sign-password"
                         value={password}
@@ -107,6 +112,17 @@ const SignIn = () => {
                         className="sign-in-email"
                         onChange={handlePassword}
                     />
+                    <div className="password-toggle" onClick={togglePasswordVisibility}>
+                        {
+                            showPassword ? (
+                                <i className="fas fa-eye-slash"></i>
+                            ) : (
+                                <i className="fas fa-eye"></i>
+                            )
+                        }
+                    </div>
+
+
                 </div>
 
                 <div className="remaimber-pass">
@@ -118,7 +134,7 @@ const SignIn = () => {
                 </div>
                 <div className="login-button-container">
                     <button className='login-btn' onClick={handleLogin}>Login</button>
-                    <label className="have-account after-login-text">Don't have an account? <Link to={"/sign-up"} className='link-text'>Sign Up</Link></label>
+                    <label className="have-account after-login-text">DON,T HAVE AN ACCOUNT? <Link to={"/sign-up"} className='link-text'>SIGN UP</Link></label>
                     <label className="after-login-text">Click here to view <a className='link-text' >Privacy Policy</a></label>
                 </div>
             </div>

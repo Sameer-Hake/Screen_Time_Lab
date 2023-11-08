@@ -34,39 +34,39 @@ const router = createBrowserRouter([
         element: <AppLayout />,
         children: [
             {
-                path: '/app',
+                path: '',
                 element: <Children />
             },
             {
-                path: '/app/task-creation',
+                path: 'task-creation',
                 element: <TaskCreation />
             },
             {
-                path: '/app/task-review',
+                path: 'task-review',
                 element: <TaskReview />
             },
             {
-                path: '/app/parent',
+                path: 'parent',
                 element: <Parent />
             },
             {
-                path: '/app/invite-friend',
+                path: 'invite-friend',
                 element: <InviteFriend />
             },
             {
-                path: '/app/account',
+                path: 'account',
                 element: <Account />
             },
             {
-                path: '/app/help',
+                path: 'help',
                 element: <Help />
             },
             {
-                path: '/app/task',
+                path: 'task',
                 element: <NewTask />
             },
             {
-                path: '/app/task/:id',
+                path: 'task/:id',
                 element: <EditTask />
             }
         ]
